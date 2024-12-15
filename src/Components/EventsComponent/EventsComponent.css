@@ -1,0 +1,35 @@
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+.events-top{
+    margin-left: 30px;
+}
+.events-el{
+    border-right: 10px solid #FFC400;
+    margin-top: 20px;
+}
+.events-head{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: brown;
+    font-size: 75px;
+}
+@media (max-width: 768px){
+    .events-el{
+        border-right: 10px solid #FFC400;
+        margin-top: 20px;
+        max-width: 100vw;
+    }
+    .events-top{
+        margin-left: 30px;
+    }
+    .events-head{
+        font-size: 50px;
+    }
+    .events-text{
+        font-size: 15px;
+        text-align: center;
+    }
+}

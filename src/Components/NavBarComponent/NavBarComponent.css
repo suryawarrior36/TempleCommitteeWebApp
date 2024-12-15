@@ -1,0 +1,103 @@
+.custom-navbar {
+    background-color: #9c0303;
+    border-bottom: 5px solid #ffc400;
+    font-family: 'Cambria, Cochin, Georgia, Times, serif';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+}
+
+.custom-brand {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 15px;
+    border-radius: 100%;
+}
+
+.custom-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.custom-nav .nav-link:hover {
+    color: #ffc400;
+}
+
+#basic-nav-dropdown .dropdown-item {
+    color: #990011;
+}
+
+#basic-nav-dropdown .dropdown-item:hover {
+    color: #ffc400;
+}
+
+.custom-navbar .navbar-toggler {
+    border-color: #990011;
+}
+
+.custom-brand:hover {
+    color: #ffc400;
+}
+
+.custom-nav .nav-link.active {
+    background-color: #ffc400;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.custom-nav .nav-link {
+    color: #f6f6f6;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.custom-nav .nav-link:hover {
+    color: #b8b0b0;
+}
+
+/* Add margin to body to prevent content overlap */
+body {
+    padding-top: 80px;
+}
+
+
+@media (max-width: 768px){
+    .custom-navbar {
+        background-color: #9c0303;
+        border-bottom: 5px solid #ffc400;
+        font-family: 'Cambria, Cochin, Georgia, Times, serif';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 1000;
+    }
+    .custom-brand {
+        font-size: 15px;
+    }
+    .logo {
+        width: 40px;
+    }
+    .custom-nav .nav-link {
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
