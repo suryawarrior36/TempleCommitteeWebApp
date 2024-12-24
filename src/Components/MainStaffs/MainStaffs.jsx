@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import './MainStaffs.css'
+import Priest from '../../assets/IMG-20241219-WA0007.jpg';
+import Staff from '../../assets/IMG-20241218-WA0024.jpg';
 import CommitteeCard from '../CommitteeCard/CommitteeCard'
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import AboutModal from '../AboutModal/AboutModal';
 const MainStaffs = () => {
     const [show, setShow] = useState(false);
   return (
@@ -11,13 +14,23 @@ const MainStaffs = () => {
             <div className='staff-top'>
                 <h1 className='staff-head'>Temple Staffs</h1>
                 <hr></hr>
-                <p className='staff-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda magni ad sit consequatur a, eos eveniet necessitatibus excepturi, nisi praesentium commodi facilis placeat? Quisquam sint, eaque nulla magnam eligendi ipsum?</p>
+                <p className='staff-text'>The temple staff, including the priest and assistant workers, play a vital role in ensuring the smooth functioning of the temple and maintaining its sanctity. The priest performs daily rituals, poojas, and special ceremonies, offering spiritual guidance to devotees. The assistant workers diligently manage the temple’s cleanliness, decoration, and overall upkeep, creating a serene and welcoming environment for visitors. Together, they uphold the temple's traditions and contribute to its divine atmosphere, fostering a sense of devotion and community among all who visit.</p>
             </div>
             <div className='staff-bottom'>
-                <CommitteeCard/>
-                <CommitteeCard/>
+            <CommitteeCard 
+              imageUrl={Priest} 
+              extraDesign="Sivagama Praveenar Sagitya Sironmani Samaskirutha Pandit, M.A, M.ed, HOD of Sanskrit"
+              name="Thiru. S. Sridra Sharma" 
+              designation="Priest" 
+            />
+            <CommitteeCard 
+              imageUrl={Staff} 
+              name="Mrs. Bakkyam" 
+              designation="Temple Assistant" 
+            />
             </div>
-            <div className='staff-more'>
+            <AboutModal/>
+            {/* <div className='staff-more'>
             <Button variant="primary" onClick={() => setShow(true)}>
         Know More
       </Button>
@@ -53,7 +66,7 @@ const MainStaffs = () => {
           <CommitteeCard/>
         </Modal.Body>
       </Modal>
-            </div>
+            </div> */}
             
         </div>
     </>

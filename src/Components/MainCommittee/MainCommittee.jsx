@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import CommitteeCard from '../CommitteeCard/CommitteeCard'
 import './MainCommittee.css'
 import Secretary from '../../assets/secretary.jpg';
+import Tresurer from '../../assets/IMG-20241218-WA0004.jpg';
+import President from '../../assets/WhatsApp Image 2024-12-19 at 21.35.25_170d7a73.jpg';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 const MainCommittee = () => {
@@ -12,26 +14,26 @@ const MainCommittee = () => {
             <div className='comm-top'>
                 <h1 className='comm-head'>Temple Committee</h1>
                 <hr></hr>
-                <p className='comm-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda magni ad sit consequatur a, eos eveniet necessitatibus excepturi, nisi praesentium commodi facilis placeat? Quisquam sint, eaque nulla magnam eligendi ipsum?</p>
+                <p className='comm-text'>The Sri Nagathamman Temple Committee is dedicated to preserving the rich history and traditions of the temple while ensuring its smooth functioning and upkeep. The committee oversees the temple's maintenance, organizes spiritual and cultural events, and facilitates the active involvement of devotees. By managing bookings for special poojas, coordinating temple services, and maintaining transparency, the committee strives to create a welcoming and divine space for worshippers and uphold the temple's legacy for generations to come.</p>
             </div>
             <div className='comm-bottom'>
             <CommitteeCard 
-              imageUrl="https://via.placeholder.com/300" 
-              name="John Doe" 
+              imageUrl={President} 
+              name="Thiru. Annamalai" 
               designation="President" 
             />
             <CommitteeCard 
               imageUrl={Secretary} 
-              name="Jane Smith" 
+              name="Thiru. Raju" 
               designation="Secretary" 
             />
             <CommitteeCard 
-              imageUrl="https://via.placeholder.com/300" 
-              name="Robert Brown" 
+              imageUrl={Tresurer} 
+              name="Thiru. M. Arul" 
               designation="Treasurer" 
             />
             </div>
-            <div className='comm-more'>
+            {/* <div className='comm-more'>
             <Button variant="primary" onClick={() => setShow(true)}>
         Know More
       </Button>
@@ -67,7 +69,7 @@ const MainCommittee = () => {
           <CommitteeCard/>
         </Modal.Body>
       </Modal>
-            </div>
+            </div> */}
             
         </div>
     </>

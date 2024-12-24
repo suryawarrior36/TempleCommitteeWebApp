@@ -6,6 +6,9 @@
 }
 .comm-top{
     margin-left: 30px;
+    .comm-text{
+        font-size: 18px;
+    }
 }
 .committee-el{
     border-left: 10px solid #FFC400;
@@ -26,6 +29,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: brown;
 }
+
 
 @media (max-width: 768px){
     .committee-el{

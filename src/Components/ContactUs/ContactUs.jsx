@@ -33,15 +33,13 @@ const ContactUs = () => {
         <div className='contact-content'>
         <div className='map-el'>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d232.51670240781536!2d80.14308120125617!3d13.016580558522747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260f626895ca9%3A0x32528d9dd1139e2!2sNagathamman%20Temple!5e1!3m2!1sen!2sin!4v1730490630473!5m2!1sen!2sin"
-          width="300"
-          height="500"
-          style={{ border: "0" }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Temple Location"
-        ></iframe>
+    className="map-frame" 
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d232.51670240781536!2d80.14308120125617!3d13.016580558522747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260f626895ca9%3A0x32528d9dd1139e2!2sNagathamman%20Temple!5e1!3m2!1sen!2sin!4v1730490630473!5m2!1sen!2sin"
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Temple Location"
+  ></iframe>
         </div>
         <div className='contact-form'>
           <h2 className='ask-us'>"Ask Us Your Queries"</h2>

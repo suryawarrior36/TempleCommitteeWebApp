@@ -1,7 +1,7 @@
 import React from 'react';
 import './CommitteeCard.css';
 
-const CommitteeCard = ({ imageUrl, name, designation }) => {
+const CommitteeCard = ({ imageUrl, name, designation, extraDesign }) => {
   return (
     <>
       <div className='card-el'>
@@ -10,6 +10,7 @@ const CommitteeCard = ({ imageUrl, name, designation }) => {
         </div>
         <hr />
         <div className='card-bottom'>
+          <p>{extraDesign}</p>
           <h1>{name}</h1>
           <p>{designation}</p>
         </div>

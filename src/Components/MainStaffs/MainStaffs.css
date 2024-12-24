@@ -6,6 +6,9 @@
 }
 .staff-top{
     margin-left: 30px;
+    .staff-text{
+        font-size: 18px;
+    }
 }
 .staff-el{
     border-right: 10px solid #FFC400;
