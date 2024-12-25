@@ -1,0 +1,44 @@
+.about-history{
+    margin: 2%;
+    .abt-header{
+        h1{
+            font-size: 65px;
+        }
+        text-align: left;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: brown;
+        margin-top: 0%;
+    }
+}
+.para-l{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h3{
+        margin: 10px;
+    }
+}
+.para-r{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    h3{
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px){
+    .para-l{
+        display: flex;
+        flex-direction: column;
+    }
+    .para-r{
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        width: 15rem;
+    }
+}

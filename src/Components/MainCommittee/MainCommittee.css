@@ -13,17 +13,13 @@
 .committee-el{
     border-left: 10px solid #FFC400;
     margin-top: 20px;
+    background-color: #f7edc7;
 }
 .comm-more{
     display: flex;
     justify-content: center;
     align-items: center ;
 }
-.model-body{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .comm-head{
     font-size: 75px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

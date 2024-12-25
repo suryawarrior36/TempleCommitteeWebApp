@@ -9,39 +9,38 @@ import ContactUs from './Components/ContactUs/ContactUs';
 import FooterComponent from './Components/FooterComponent/FooterComponent';
 import Gallery from './Components/Gallery/Gallery';
 import EventsComponent from './Components/EventsComponent/EventsComponent';
-function App() {
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AboutModal from './Components/AboutModal/AboutModal';
+import Donation from './Components/Donation/Donation';
 
+function App() {
   return (
-    <>
-    <div id='nav-part'>
-    <NavBarComponent/>
-    </div>
-    <div id='land-part'>
-    <LandingPage/>
-    </div>
-    <div id='about-part'>
-    <AboutUs/>
-    </div>
-    <div id='committee-part'>
-    <MainCommittee/>
-    </div>
-    <div className='staff-part'>
-    <MainStaffs/>
-    </div>
-    <div id='gallery'>
-      <Gallery/>
-    </div>
-    <div id='events'>
-      <EventsComponent/>
-    </div>
-    <div id='contact-us'>
-      <ContactUs/>
-    </div>
-    <div>
-      <FooterComponent/>
-    </div>
-    </>
+    <BrowserRouter>
+
+      {/* Only show AboutModal for the /knowMore path */}
+      <Routes>
+        <Route path="/knowMore" element={<AboutModal />} />
+      </Routes>
+
+      {/* Default route for '/' displaying all components */}
+      <Routes>
+        <Route path="/" element={
+          <>
+            <NavBarComponent />
+            <LandingPage />
+            <AboutUs />
+            <MainCommittee />
+            <MainStaffs />
+            <Gallery />
+            <EventsComponent />
+            <Donation/>
+            <ContactUs />
+            <FooterComponent />
+          </>
+        } />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
-export default App
+export default App;

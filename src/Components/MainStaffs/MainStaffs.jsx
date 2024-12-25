@@ -5,7 +5,6 @@ import Staff from '../../assets/IMG-20241218-WA0024.jpg';
 import CommitteeCard from '../CommitteeCard/CommitteeCard'
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import AboutModal from '../AboutModal/AboutModal';
 const MainStaffs = () => {
     const [show, setShow] = useState(false);
   return (
@@ -25,11 +24,10 @@ const MainStaffs = () => {
             />
             <CommitteeCard 
               imageUrl={Staff} 
-              name="Mrs. Bakkyam" 
+              name="Thirumathi. Bakkyam" 
               designation="Temple Assistant" 
             />
             </div>
-            <AboutModal/>
             {/* <div className='staff-more'>
             <Button variant="primary" onClick={() => setShow(true)}>
         Know More

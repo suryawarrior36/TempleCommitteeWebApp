@@ -19,18 +19,19 @@ const MainCommittee = () => {
             <div className='comm-bottom'>
             <CommitteeCard 
               imageUrl={President} 
-              name="Thiru. Annamalai" 
+              name="Thiru. K. Annamalai" 
               designation="President" 
             />
             <CommitteeCard 
               imageUrl={Secretary} 
-              name="Thiru. Raju" 
+              name="Thiru. A. Raju" 
               designation="Secretary" 
             />
             <CommitteeCard 
               imageUrl={Tresurer} 
-              name="Thiru. M. Arul" 
-              designation="Treasurer" 
+              name="Thiru. M. Arul"
+              designation="Treasurer"
+              sideDesign="(M.Com)"
             />
             </div>
             {/* <div className='comm-more'>
