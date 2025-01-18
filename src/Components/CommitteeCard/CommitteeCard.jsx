@@ -1,7 +1,7 @@
 import React from 'react';
 import './CommitteeCard.css';
 
-const CommitteeCard = ({ imageUrl, name, designation, extraDesign, sideDesign }) => {
+const CommitteeCard = ({ imageUrl, name, designation, extraDesign, sideDesign, contactNo }) => {
   return (
     <>
       <div className='card-el'>
@@ -10,12 +10,13 @@ const CommitteeCard = ({ imageUrl, name, designation, extraDesign, sideDesign })
         </div>
         <hr />
         <div className='card-bottom'>
-          <p>{extraDesign}</p>
+          <p className='extra'>{extraDesign}</p>
           <div className='name-ctn'>
           <h1 className='name-h1'>{name}</h1>
-          <p>{sideDesign}</p>
+          {/* <p>{sideDesign}</p> */}
           </div>
-          <p>{designation}</p>
+          <p className='dtls'>{designation}</p>
+          <p className='dtls'>{contactNo}</p>
         </div>
       </div>
     </>

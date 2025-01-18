@@ -1,10 +1,13 @@
 .don-top{
-    margin-left: 10px;
+    margin-left: 30px;
 }
 .don-el{
     border-left: 10px solid #FFC400;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     background-color: #f7edc7;
+    height: 100vh;
+    max-height: fit-content;
+    /* padding-top: 65px; */
 }
 .don-head{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -26,6 +29,12 @@
 }
 
 @media (max-width: 768px){
+    .don-el{
+        height: fit-content;
+    }
+    .don-top{
+        margin-left: 10px;
+    }
     .don-container{
         display: flex;
         flex-direction: column;

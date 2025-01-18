@@ -1,5 +1,5 @@
 .about-history{
-    margin: 2%;
+    /* margin: 2%; */
     .abt-header{
         h1{
             font-size: 65px;
@@ -15,6 +15,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 20px;
     h3{
         margin: 10px;
     }
@@ -24,10 +25,34 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    margin: 20px;
     h3{
         margin: 10px;
     }
 }
+.para-c{
+    text-align: center;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    margin-top: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 80px;
+    font-family: "Playwrite US Trad", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #ca061d;
+    background-color: whitesmoke;
+}
+.abt1{
+    width: 40rem;
+}
+.abt-cur{
+    min-width: 35rem;
+    min-height: 25rem;
+}
+
 
 @media (max-width: 768px){
     .para-l{
@@ -40,5 +65,35 @@
     }
     img{
         width: 15rem;
+    }
+    .about-history{
+        /* margin: 2%; */
+        .abt-header{
+            h1{
+                font-size: 45px;
+            }
+        }
+    }
+    .para-l{
+        margin: 0%;
+        h3{
+            /* margin: 10px; */
+        }
+    }
+    .para-r{
+        h3{
+            /* margin: 10px; */
+        }
+    }
+    .para-c{
+        padding: 0%;
+        font-size: 30px;
+    }
+    .abt1{
+        width: 40rem;
+    }
+    .abt-cur{
+        min-width: 100vw;
+        min-height: 25rem;
     }
 }

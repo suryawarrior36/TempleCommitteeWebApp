@@ -1,108 +1,124 @@
 /* Gallery Container */
-.gallery-top{
-    margin-left: 30px;
-}
-.gallery-el{
-    border-left: 10px solid #FFC400;
-    margin-top: 20px;
-    background-color: #f7edc7;
+.gallery-top {
+  margin-left: 30px;
 }
 
+.gallery-el {
+  border-left: 10px solid #FFC400;
+  /* padding-top: 65px; */
+  background-color: #f7edc7;
+  height: 100vh;
+  /* max-height: fit-content; */
+}
 
 .gallery-container {
-    max-height: 60vh; /* Fixed height for the gallery */
-    overflow-y: auto; /* Enable scrolling for the gallery */
-    padding: 10px;
-    background-color: #f8f9fa;
-    border: 1px solid #ddd; /* Optional: Add a border for aesthetics */
-    border-radius: 10px;
-  }
-  
-  /* Gallery Grid */
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
-    gap: 10px;
-    align-items: center;
-  }
-  
-  /* Gallery Items */
-  .gallery-item {
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .gallery-item img,
-  .gallery-item video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure media fits within grid cells */
-    border-radius: 5px;
-    transition: transform 0.3s ease;
-  }
-  
-  .gallery-item:hover img,
-  .gallery-item:hover video {
-    transform: scale(1.05);
-  }
-  
-  /* Modal Styles */
-  .gallery-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .modal-content {
-    justify-content: center;
-    align-items: center;
-    max-width: 50vw;
-    max-height: 30vh;
-    img{
+  max-height: 60vh; /* Fixed height for the gallery */
+  overflow-y: auto; /* Enable scrolling for the gallery */
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd; /* Optional: Add a border for aesthetics */
+  border-radius: 10px;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+  gap: 10px;
+  align-items: center;
+}
+
+/* Gallery Items */
+.gallery-item {
+  width: 100%;
+  height: 150px; /* Fixed height for thumbnails */
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.gallery-item img,
+.gallery-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure media fits within grid cells */
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img,
+.gallery-item:hover video {
+  transform: scale(1.05);
+}
+
+/* Modal Styles (Untouched) */
+.gallery-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  justify-content: center;
+  align-items: center;
+  max-width: 50vw;
+  max-height: 30vh;
+  img {
       max-width: fit-content;
       max-height: 100vh;
-    }
   }
-  
-  .modal-content img,
-  .modal-content video {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  /* Prevent body scrolling when modal is open */
-  body.modal-open {
-    overflow: hidden;
+}
+
+.modal-content img,
+.modal-content video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Prevent body scrolling when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+
+.upload-info{
+  text-align: center;
+  color: brown;
+  padding: 5rem;
+}
+
+@media (max-width: 768px) {
+  .gallery-el {
+      max-width: 100vw;
+      height: fit-content;
   }
 
-  @media (max-width: 768px){
-    .gallery-el{
-      max-width: 100vw;
-      height: 90vh;
-    }
-    .gallery-top{
+  .gallery-top {
       margin-left: 10px;
   }
-    .gallery-container{
-      
-    }
-    .modal-content {
+
+  .modal-content {
       justify-content: center;
       align-items: center;
       max-width: 80vw;
       max-height: 90vh;
-      img{
-        max-width: fit-content;
-        max-height: 100vh;
+      img {
+          max-width: fit-content;
+          max-height: 100vh;
       }
-    }
   }
-  
+  .gallery-container {
+    max-height: 80vh; /* Fixed height for the gallery */
+  }
+}

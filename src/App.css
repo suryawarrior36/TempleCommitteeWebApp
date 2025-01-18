@@ -1,3 +1,7 @@
 p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#land-part,#about-part, #committee-members, #staff-members, #gallery, #events, #donations, #contact-us {
+    scroll-margin-top: 80px;
+ }

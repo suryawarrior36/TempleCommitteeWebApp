@@ -71,6 +71,10 @@ const Gallery = () => {
         </div>
       )}
     </div>
+    <div className="upload-info">
+      <h2>You can upload our Temple related pictures and videos in the "Contact Us" section below.</h2>
+      <p>**Images will be uploaded only after verifying it**</p>
+    </div>
     </div>
   );
 };

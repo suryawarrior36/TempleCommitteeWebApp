@@ -12,11 +12,11 @@ import EventsComponent from './Components/EventsComponent/EventsComponent';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AboutModal from './Components/AboutModal/AboutModal';
 import Donation from './Components/Donation/Donation';
+import bgImg from './assets/bg-main.jpg';
 
 function App() {
   return (
     <BrowserRouter>
-
       {/* Only show AboutModal for the /knowMore path */}
       <Routes>
         <Route path="/knowMore" element={<AboutModal />} />
@@ -27,14 +27,30 @@ function App() {
         <Route path="/" element={
           <>
             <NavBarComponent />
+            <div id='land-part'>
             <LandingPage />
+            </div>
+            <div id='about-part'>
             <AboutUs />
+            </div>
+            <div id='committee-members'>
             <MainCommittee />
+            </div>
+            <div id='staff-members'>
             <MainStaffs />
+            </div>
+            <div id='gallery'>
             <Gallery />
+            </div>
+            <div id='events'>
             <EventsComponent />
+            </div>
+            <div id='donations'>
             <Donation/>
+            </div>
+            <div id='contact-us'>
             <ContactUs />
+            </div>
             <FooterComponent />
           </>
         } />

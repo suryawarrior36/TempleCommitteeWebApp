@@ -13,13 +13,13 @@ const MainStaffs = () => {
             <div className='staff-top'>
                 <h1 className='staff-head'>Temple Staffs</h1>
                 <hr></hr>
-                <p className='staff-text'>The temple staff, including the priest and assistant workers, play a vital role in ensuring the smooth functioning of the temple and maintaining its sanctity. The priest performs daily rituals, poojas, and special ceremonies, offering spiritual guidance to devotees. The assistant workers diligently manage the temple’s cleanliness, decoration, and overall upkeep, creating a serene and welcoming environment for visitors. Together, they uphold the temple's traditions and contribute to its divine atmosphere, fostering a sense of devotion and community among all who visit.</p>
+                <p className='staff-text'>The temple staff, including the priest and assistant workers, play a vital role in ensuring the smooth functioning of the temple and maintaining its sanctity. The priest performs daily rituals, poojas, and special ceremonies, offering spiritual guidance to devotees. The assistant workers diligently manage the temple’s cleanliness, decoration, and overall upkeep, creating a serene and welcoming environment for visitors.</p>
             </div>
             <div className='staff-bottom'>
             <CommitteeCard 
               imageUrl={Priest} 
               extraDesign="Sivagama Praveenar Sagitya Sironmani Samaskirutha Pandit, M.A, M.ed, HOD of Sanskrit"
-              name="Thiru. S. Sridra Sharma" 
+              name="Thiru. S. Sridhra Sharma" 
               designation="Priest" 
             />
             <CommitteeCard 

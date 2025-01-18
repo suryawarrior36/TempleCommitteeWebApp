@@ -14,24 +14,27 @@ const MainCommittee = () => {
             <div className='comm-top'>
                 <h1 className='comm-head'>Temple Committee</h1>
                 <hr></hr>
-                <p className='comm-text'>The Sri Nagathamman Temple Committee is dedicated to preserving the rich history and traditions of the temple while ensuring its smooth functioning and upkeep. The committee oversees the temple's maintenance, organizes spiritual and cultural events, and facilitates the active involvement of devotees. By managing bookings for special poojas, coordinating temple services, and maintaining transparency, the committee strives to create a welcoming and divine space for worshippers and uphold the temple's legacy for generations to come.</p>
+                <p className='comm-text'>The Sri Nagathamman Temple Committee is dedicated to preserving the rich history and traditions of the temple while ensuring its smooth functioning and upkeep. The committee oversees the temple's maintenance, organizes spiritual and cultural events, and facilitates the active involvement of devotees. By managing bookings for special poojas, coordinating temple services, and maintaining transparency</p>
             </div>
             <div className='comm-bottom'>
             <CommitteeCard 
               imageUrl={President} 
               name="Thiru. K. Annamalai" 
-              designation="President" 
+              designation="President"
+              contactNo='+91 98419-71096'
             />
             <CommitteeCard 
               imageUrl={Secretary} 
               name="Thiru. A. Raju" 
-              designation="Secretary" 
+              designation="Secretary"
+              contactNo='+91 99405-17937'
             />
             <CommitteeCard 
-              imageUrl={Tresurer} 
-              name="Thiru. M. Arul"
+              imageUrl={Tresurer}
+              name="Thiru. M. Arul, M.Com"
               designation="Treasurer"
-              sideDesign="(M.Com)"
+              sideDesign="M.Com"
+              contactNo='+91 94452-13785'
             />
             </div>
             {/* <div className='comm-more'>

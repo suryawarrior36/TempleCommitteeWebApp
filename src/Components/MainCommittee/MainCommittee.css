@@ -12,8 +12,10 @@
 }
 .committee-el{
     border-left: 10px solid #FFC400;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     background-color: #f7edc7;
+    /* max-height: fit-content; */
+    height: 100vh;
 }
 .comm-more{
     display: flex;
@@ -30,6 +32,7 @@
 @media (max-width: 768px){
     .committee-el{
         max-width: 100vw;
+        height: fit-content;
     }
     .comm-text{
         text-align: center;
@@ -44,6 +47,7 @@
     }
     .comm-bottom{
         max-width: 100vw;
+        max-height: fit-content;
     }
     .comm-more{
         display: flex;

@@ -42,7 +42,7 @@ const AboutUs = () => {
         <div className='about-right'>
             <h1 className='about-head'>About Us</h1>
             <hr></hr>
-            <p className='about-text'>Sri Nagathamman Kovil in Gerugambakkam, Bhoomadevi Nagar, is a sacred place where devotion and community come together. Built on a site once revered for a sacred snake burrow, the temple has grown into a symbol of faith for the local residents and visitors alike. Dedicated to Goddess Nagathamman, it stands as a peaceful haven for spiritual seekers, fostering a sense of unity and devotion among all who come to offer prayers.</p>
+            <p className='about-text'>Sri Nagathamman Kovil in Gerugambakkam, Bhoomadevi Nagar, Chennai, is a sacred place where devotion and community come together. Built on a site once revered for a sacred snake burrow, the temple has grown into a symbol of faith for the local residents and visitors alike. Dedicated to Goddess Nagathamman, it stands as a peaceful haven for spiritual seekers, fostering a sense of unity and devotion among all who come to offer prayers.</p>
             <p className='about-text'>The temple features a serene ambiance, with the divine Nagathamman statue as the main deity, alongside sanctums for Vinayagar and Murugar, and a special mandapam marking the original sacred site. Its towering gopuram with a kalasam on top adds to its grandeur, making it a cherished spiritual landmark where devotees gather to seek blessings and celebrate religious occasions.</p>
             <Button variant="primary" className='abt-btn' onClick={()=>navigate('/knowMore')}>Know More</Button>
         </div>
